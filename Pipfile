@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 ipdb = "*"
+requests = "*"
+scrapy = "*"
+bs4 = "*"
 
 [dev-packages]
 
