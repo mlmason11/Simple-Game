@@ -5,9 +5,8 @@ name = "pypi"
 
 [packages]
 ipdb = "*"
-requests = "*"
-scrapy = "*"
-bs4 = "*"
+pygame = "*"
+colorama = "*"
 
 [dev-packages]
 
