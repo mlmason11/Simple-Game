@@ -21,7 +21,7 @@ class User():
         id INTEGER PRIMARY KEY,
         username TEXT,
         runs INTEGER,
-        fastest_time FLOAT,
+        fastest_time FLOAT
         )
         """
 
