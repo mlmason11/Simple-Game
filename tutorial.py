@@ -89,16 +89,16 @@ class Coin(Object):
         self.mask = pygame.mask.from_surface(self.image)
         self._collected = False  # Initialize collected state to False
 
-    def is_collected(self):
-        return self.collected
+    # def is_collected(self):
+    #     return self.collected
 
-    # @property
-    # def collected(self):
-    #     return self._collected
+    @property
+    def collected(self):
+        return self._collected
     
-    # @collected.setter
-    # def collected(self, collected):
-
+    @collected.setter
+    def collected(self, collected):
+        self._collected = collected
 
 class Fire(Object):
     ANIMATION_DELAY = 3
@@ -434,6 +434,7 @@ def main(window):
     user_input = ""
 
     while user_input != "4":
+        print_pause("Welcome to Simple Game. Follow the menu prompts to play.")
         print_pause(MENU_PROMPTS)
         user_input = input(">>> ")
 
